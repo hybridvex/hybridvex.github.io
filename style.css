@@ -7,6 +7,7 @@ body {
 
 h1 {
   font-size: calc(74px + 12 * (100vw - 300px) / 1300);
+  font-family: "Orbitron", Arial, Helvetica, sans-serif;
 }
 
 h2 {
@@ -23,6 +24,9 @@ p {
 
 .focus {
   color: #892be2;
+  font-size: 200%;
+  vertical-align: middle;
+  text-shadow: 0 0 32px purple;
 }
 
 .hero {
@@ -97,6 +101,8 @@ p {
   list-style: none;
   padding-left: 0;
   margin: 0;
+  font-family: "Orbitron", Arial, Helvetica, sans-serif;
+  text-shadow: 0 0 32px white;
 }
 
 .luxbar-menu a,
