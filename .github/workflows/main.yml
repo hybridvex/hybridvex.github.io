@@ -27,6 +27,10 @@ jobs:
       - name: User info
         run: |
           git config user.name "HYBRID bot"
+      
+      - name: NPM install
+        run: npm update
+
       - name: Check formatting
         run: |
           npm run check_format
