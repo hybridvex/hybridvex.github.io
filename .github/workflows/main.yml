@@ -26,16 +26,10 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: NPM install
-        run: npm update
-
-      - name: Check formatting
-        continue-on-error: true
-        run: |
-          npm run check_format
+        run: npm ci
 
       # Reformat if needed 
       - name: Reformat
-        if: failure()
         run: |
           npm run format
 
