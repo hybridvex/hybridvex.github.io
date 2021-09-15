@@ -24,7 +24,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
+      - name: User info
+        run: |
+          git config user.name "HYBRID bot"
       - name: Check formatting
         run: |
           npm run check_format
