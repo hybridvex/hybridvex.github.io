@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "site for 20785A",
     "scripts": {
+        "check_format": "prettier --check .",
         "format": "prettier --write ."
     },
     "repository": {
