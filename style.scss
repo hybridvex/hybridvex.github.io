@@ -5,7 +5,7 @@ body {
     background: $bg;
     margin: 0;
     color: $text;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 h1 {
@@ -155,7 +155,7 @@ p {
 
 .dropdown>a::after {
     position: absolute;
-    content: '';
+    content: "";
     right: 10px;
     top: 25px;
     border-width: 5px 5px 0;

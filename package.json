@@ -1,0 +1,16 @@
+{
+    "name": "hybrid",
+    "version": "1.0.0",
+    "description": "site for 20785A",
+    "scripts": {
+        "format": "prettier --write ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hybridvex/hybridvex.github.io.git"
+    },
+    "author": "lolgeny, babyyoda777, theaverageavocado",
+    "dependencies": {
+        "prettier": "^2.4.0"
+    }
+}
