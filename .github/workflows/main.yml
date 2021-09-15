@@ -24,9 +24,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: User info
-        run: |
-          git config user.name "HYBRID bot"
       
       - name: NPM install
         run: npm update
@@ -40,5 +37,8 @@ jobs:
         if: failure()
         run: |
           npm run format
-          git add .
-          git commit -m "Fixed Formatting"
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Fixed Formatting
+        
