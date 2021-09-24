@@ -22,7 +22,12 @@ p {
   font-size: calc(74px + 12 * (100vw - 300px) / 1300);
 }
 
-.focus, .glitch-5, .glitch-4, .glitch-3, .glitch-2, .glitch-1 {
+.focus,
+.glitch-5,
+.glitch-4,
+.glitch-3,
+.glitch-2,
+.glitch-1 {
   color: #892be2;
   font-size: 1.8em;
   vertical-align: middle;
