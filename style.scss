@@ -262,16 +262,33 @@ p {
         display: block !important;
     }
     flex-direction: column;
-    flex-wrap: wrap;
-    height: 100px;
+    justify-content: center;
+    height: 300px;
+    padding: 50px;
     .header {
         color: white;
         font-size: 2em;
     }
     .description {
         color: rgb(180, 180, 180);
+        max-width: 40%;
     }
     .figure {
-        width: 50%;
+        width: 40%;
+        margin: 20px;
+        align-self: flex-end;
+    }
+}
+
+.sections {
+    .section:nth-child(odd) {
+        background-color: rgb(20, 20, 20);
+        flex-wrap: wrap;
+        text-align: left;
+    }
+    .section:nth-child(even) {
+        background-color: black;
+        flex-wrap: wrap-reverse;
+        text-align: right;
     }
 }

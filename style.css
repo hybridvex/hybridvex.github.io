@@ -259,8 +259,9 @@ p {
 .section {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  height: 100px;
+  justify-content: center;
+  height: 300px;
+  padding: 50px;
 }
 @media (max-width: 400px) {
   .section {
@@ -273,9 +274,23 @@ p {
 }
 .section .description {
   color: #b4b4b4;
+  max-width: 40%;
 }
 .section .figure {
-  width: 50%;
+  width: 40%;
+  margin: 20px;
+  align-self: flex-end;
+}
+
+.sections .section:nth-child(odd) {
+  background-color: #141414;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.sections .section:nth-child(even) {
+  background-color: black;
+  flex-wrap: wrap-reverse;
+  text-align: right;
 }
 
 /*# sourceMappingURL=style.css.map */
