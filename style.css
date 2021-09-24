@@ -22,110 +22,23 @@ p {
   font-size: calc(74px + 12 * (100vw - 300px) / 1300);
 }
 
-.focus, .glitch-5, .glitch-4, .glitch-3, .glitch-2, .glitch-1 {
-  color: #892be2;
-  font-size: 1.8em;
-  vertical-align: middle;
-  text-shadow: 0 0 32px purple;
-  position: absolute;
-  margin-left: 10%;
-}
-
 .title {
-  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
 }
 
-.glitch-1 {
-  color: rgba(237, 43, 226, 0.7);
-  text-shadow: none;
-  clip-path: inset(45% 0 40% 0);
-  margin-left: 10%;
+.subtitle {
+  font-size: 0.6em;
+  font-weight: lighter;
 }
 
-@keyframes glitch-2 {
-  0% {
-    margin-left: 10%;
-  }
-  100% {
-    margin-left: 13%;
-  }
-}
-.glitch-2 {
-  color: rgba(117, 243, 206, 0.4);
-  text-shadow: none;
-  margin-left: 11%;
-  animation: glitch-2 3s steps(4, end) alternate-reverse infinite;
-}
-
-.glitch-3 {
-  color: #898fe2;
-  text-shadow: none;
-  clip-path: inset(70% 0 10% 0);
-  margin-left: 9%;
-  animation: glitch-3 1s steps(2, end) alternate-reverse infinite;
-}
-@keyframes glitch-3 {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-
-.glitch-4 {
-  color: #573fff;
-  text-shadow: none;
-  clip-path: inset(30% 0 50% 0);
-  margin-left: 11.3%;
-  animation: glitch-4 2s linear alternate-reverse infinite;
-}
-@keyframes glitch-4 {
-  0% {
-    opacity: 0%;
-  }
-  14.2857142857% {
-    opacity: 0%;
-  }
-  28.5714285714% {
-    opacity: 0%;
-  }
-  42.8571428571% {
-    opacity: 0%;
-  }
-  57.1428571429% {
-    opacity: 0%;
-  }
-  71.4285714286% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-
-.glitch-5 {
+.focus {
   color: #892be2;
-  text-shadow: none;
-  margin-left: 15%;
-  animation: glitch-5 3s steps(2, end) alternate-reverse infinite;
-}
-@keyframes glitch-5 {
-  0% {
-    opacity: 0%;
-  }
-  20% {
-    opacity: 0%;
-  }
-  40% {
-    opacity: 0%;
-  }
-  60% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
+  font-size: 3em;
+  text-shadow: 0 0 32px purple;
 }
 
 .hero {
