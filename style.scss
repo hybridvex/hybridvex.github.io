@@ -255,3 +255,23 @@ p {
 .logo {
     margin-top: 10px;
 }
+
+.section {
+    display: flex;
+    @media (max-width: 400px) {
+        display: block !important;
+    }
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100px;
+    .header {
+        color: white;
+        font-size: 2em;
+    }
+    .description {
+        color: rgb(180, 180, 180);
+    }
+    .figure {
+        width: 50%;
+    }
+}

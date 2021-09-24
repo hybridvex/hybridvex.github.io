@@ -256,4 +256,26 @@ p {
   margin-top: 10px;
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100px;
+}
+@media (max-width: 400px) {
+  .section {
+    display: block !important;
+  }
+}
+.section .header {
+  color: white;
+  font-size: 2em;
+}
+.section .description {
+  color: #b4b4b4;
+}
+.section .figure {
+  width: 50%;
+}
+
 /*# sourceMappingURL=style.css.map */
